@@ -1,5 +1,10 @@
 # Draw Together
+https://art-app-eight.vercel.app/
 
+## What
+A small, lightweight website to host a fun drawing night.
+
+## Why
 A group of us used to meet up at a museum, pick a room full of sculptures, and spend the afternoon drawing them. It was never really about the art we made — it was about being together, sketchbooks open, sharing a quiet kind of focus — chatting, getting to know each other, all while being engrossed in the work.
 
 Then some of us moved away. Draw Together is how we keep that going.
@@ -7,6 +12,7 @@ Then some of us moved away. Draw Together is how we keep that going.
 One person hosts a session, shares the code, and everyone joins in. The host drives — everyone else follows along on the same screen in real time.
 
 We start with a **warm-up**: silly prompts, short timers, no pressure. It loosens everyone up and gets the laughs going early. Then we browse a list of real museums from around the world and pick one to "visit." The site pulls in actual artworks from that museum's collection and randomly selects five — as if we just walked into a room together and these were the pieces in the room. Then we draw for 45 minutes, just like we used to.
+
 
 ## Getting Started
 
@@ -31,4 +37,4 @@ npx partykit dev   # PartyKit on http://localhost:1999
    ```
 
 ## Acknowledgements
-Build entirely in one evening with Claude Code
+Build in one evening entirely with Claude Code
