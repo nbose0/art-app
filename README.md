@@ -15,6 +15,9 @@ We start with a **warm-up**: silly prompts, short timers, no pressure. It loosen
 
 
 ## Getting Started
+Go here: https://art-app-eight.vercel.app/
+
+Or, if you want to set up your own:
 
 Install dependencies and start both the Next.js dev server and the PartyKit WebSocket server:
 
