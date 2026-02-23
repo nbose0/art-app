@@ -5,7 +5,7 @@ https://art-app-eight.vercel.app/
 A small, lightweight website to host a fun drawing night.
 
 ## Why
-A group of us used to meet up at a museum, pick a room full of sculptures, and spend the afternoon drawing them. It was never really about the art we made — it was about being together, sketchbooks open, sharing a quiet kind of focus — chatting, getting to know each other, all while being engrossed in the work.
+A group of us used to meet up at a museum, pick a room full of sculptures, and spend the afternoon drawing them. It was never really about the art we made — it was about being together, sketchbooks open, getting to know each other, all while being engrossed in the work.
 
 Then some of us moved away. Draw Together is how we keep that going.
 
