@@ -11,7 +11,7 @@ Then some of us moved away. Draw Together is how we keep that going.
 
 One person hosts a session, shares the code, and everyone joins in. The host drives — everyone else follows along on the same screen in real time.
 
-We start with a **warm-up**: silly prompts, short timers, no pressure. It loosens everyone up and gets the laughs going early. Then we browse a list of real museums from around the world and pick one to "visit." The site pulls in actual artworks from that museum's collection and randomly selects five — as if we just walked into a room together and these were the pieces in the room. Then we draw for 45 minutes, just like we used to.
+We start with a **warm-up**: silly prompts, short timers, no pressure. It loosens everyone up and gets the laughs going early. Then we browse a list of real museums from around the world and pick one to "visit." The site pulls in actual artworks from that museum's collection and randomly selects five — as if we just walked into a room together and these were the pieces displayed there. Then we draw for 45 minutes, just like we used to.
 
 
 ## Getting Started
