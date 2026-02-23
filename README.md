@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Draw Together
+
+A group of us used to meet up at a museum, pick a room full of sculptures, and spend the afternoon drawing them. It was never really about the art we made — it was about being together, sketchbooks open, sharing a quiet kind of focus — chatting, getting to know each other, all while being engrossed in the work.
+
+Then some of us moved away. Draw Together is how we keep that going.
+
+One person hosts a session, shares the code, and everyone joins in. The host drives — everyone else follows along on the same screen in real time.
+
+We start with a **warm-up**: silly prompts, short timers, no pressure. It loosens everyone up and gets the laughs going early. Then we browse a list of real museums from around the world and pick one to "visit." The site pulls in actual artworks from that museum's collection and randomly selects five — as if we just walked into a room together and these were the pieces in the room. Then we draw for 45 minutes, just like we used to.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start both the Next.js dev server and the PartyKit WebSocket server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # Next.js on http://localhost:3000
+npx partykit dev   # PartyKit on http://localhost:1999
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Deploy the PartyKit server:
+   ```bash
+   npx partykit deploy
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Deploy to Vercel and set the environment variable:
+   ```
+   NEXT_PUBLIC_PARTYKIT_HOST=art-app.YOUR_USERNAME.partykit.dev
+   ```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgements
+Build entirely in one evening with Claude Code
