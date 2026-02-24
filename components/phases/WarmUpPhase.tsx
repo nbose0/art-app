@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useAppStore } from "@/stores/appStore";
 import { warmUpPrompts } from "@/lib/prompts";
 import PromptDisplay from "@/components/warmup/PromptDisplay";
@@ -8,12 +9,17 @@ import BreatherScreen from "@/components/warmup/BreatherScreen";
 import Timer from "@/components/shared/Timer";
 import type { HostAction } from "@/lib/partyMessages";
 import { AnimatePresence, motion } from "motion/react";
+import { useTimerSounds } from "@/hooks/useTimerSounds";
+import { resumeAudioContext } from "@/lib/sounds";
 
 interface WarmUpPhaseProps {
   sendAction: (action: HostAction) => void;
 }
 
 export default function WarmUpPhase({ sendAction }: WarmUpPhaseProps) {
+  useTimerSounds("warmup");
+  useEffect(() => { resumeAudioContext(); }, []);
+
   const currentRound = useAppStore((s) => s.currentRound);
   const roundState = useAppStore((s) => s.roundState);
   const shuffledPromptIndices = useAppStore((s) => s.shuffledPromptIndices);

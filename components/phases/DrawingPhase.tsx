@@ -1,18 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect } from "react";
 import { useAppStore } from "@/stores/appStore";
 import DrawingTimer from "@/components/drawing/DrawingTimer";
 import ReferencePanel from "@/components/drawing/ReferencePanel";
 import Lightbox from "@/components/drawing/Lightbox";
 import TimerEndCelebration from "@/components/shared/TimerEndCelebration";
 import type { HostAction } from "@/lib/partyMessages";
+import { useTimerSounds } from "@/hooks/useTimerSounds";
+import { resumeAudioContext } from "@/lib/sounds";
 
 interface DrawingPhaseProps {
   sendAction: (action: HostAction) => void;
 }
 
 export default function DrawingPhase({ sendAction }: DrawingPhaseProps) {
+  useTimerSounds("drawing");
+  useEffect(() => { resumeAudioContext(); }, []);
+
   const selectedArtworks = useAppStore((s) => s.selectedArtworks);
   const timerSecondsLeft = useAppStore((s) => s.timerSecondsLeft);
   const isHost = useAppStore((s) => s.isHost);
